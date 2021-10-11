@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:id="@+id/topSeperator"
+        android:background="@color/dark_grey"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topSeperator"
+        android:background="@color/light_grey"
+        android:text="date"
+        android:textSize="18dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/txtViewTxnDate"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:id="@+id/separator"
+        android:layout_below="@+id/txtViewTxnDate"
+        android:background="@color/dark_grey"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewTransactionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/dark_grey40"
+        android:layout_below="@+id/separator"
+        android:layout_marginBottom="10dp"
+        android:text="asdasd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewSubDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewTransactionDesc"
+        android:layout_alignRight="@+id/txtViewTxnAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="asdasd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewTxnAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewTransactionDesc"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="asdasd" />
+</RelativeLayout>

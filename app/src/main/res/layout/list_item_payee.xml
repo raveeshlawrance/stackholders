@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="asdasd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewAccntNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewAccountName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="asdasd" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:id="@+id/topSeperator"
+        android:layout_below="@+id/txtViewAccntNo"
+        android:background="@color/dark_grey"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_arrow_large"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
