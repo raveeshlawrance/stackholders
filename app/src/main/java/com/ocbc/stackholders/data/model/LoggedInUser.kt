@@ -5,5 +5,8 @@ package com.ocbc.stackholders.data.model
  */
 data class LoggedInUser(
     val userId: String,
+    val token: String?,
+    val status : String,
+    val description : String?,
     val displayName: String
 )
